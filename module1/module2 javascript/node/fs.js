@@ -6,8 +6,8 @@ let path =require("path");
 // console.log(filePath);
 
 // //C-Create
-// fs.writeFileSync(filePath,"hello i am a text file"); // create a file 
-// fs.writeFileSync(filePath,"hello paras");
+fs.writeFileSync(filePath,"hello i am a text file"); // create a file 
+fs.writeFileSync(filePath,"hello paras");
 
 // //R-Read
 // console.log("before update ");
@@ -31,10 +31,22 @@ let path =require("path");
 //read a directory
 // let folderPath = "D:\\desktop\\FJP6web development\\module1\\module2 javascript\\javascipt"; //add \ in path
 //or
+let folderpath = __dirname;
+let ContentOfFolder = fs.readdirSync(folderpath);
+console.log(ContentOfFolder);
+
+//delete a directory
+// fs.rmdirSync("my directory");
+
+//Read a directory
 let folderPath = __dirname;
-let contentOfFolder = fs.readdirSync(folderPath);
+let contentOfFolder=fs.readdirSync(folderPath);
 console.log(contentOfFolder);
 
 //delete a directory
-fs.rmdirSync("my directory");
+// fs.rmdirSync("my directory");
+
+//copy a file
+// let sourcepath=
+// let destinationpath=
  
