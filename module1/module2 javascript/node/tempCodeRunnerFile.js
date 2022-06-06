@@ -1,2 +1,3 @@
-if (!fs.existsSync("my directory"));
-fs.mkdirSync("my directory");
+let folderpath = __dirname;
+// let ContentOfFolder = fs.readdirSync(folderpath);
+// console.log(ContentOfFolder);
